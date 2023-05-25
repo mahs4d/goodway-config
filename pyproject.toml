@@ -1,0 +1,37 @@
+[tool.poetry]
+name = "goodway-configs"
+version = "0.1.0"
+description = "configs in a good way"
+authors = ["Mahdi Sadeghi <mahdi74sadeghi@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "goodway_configs"}]
+
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pydantic = "^1.10.8"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.3.1"
+pytest-asyncio = "^0.21.0"
+pytest-cov = "^4.1.0"
+
+
+[tool.poetry.group.file.dependencies]
+pyyaml = "^6.0"
+
+
+[tool.poetry.scripts]
+
+
+
+[tool.pytest.ini_options]
+pythonpath = "lib"
+asyncio_mode = "auto"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,13 @@
+# IDE
+.vscode
+.idea
+
+# Virtual Environment
+.venv
+
+# Cache Files
+__pycache__
+.pytest_cache
+
+# Coverage Report
+.coverage
