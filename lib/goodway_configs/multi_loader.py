@@ -1,6 +1,16 @@
-from pydantic.utils import deep_update
-
 from goodway_configs.base import ConfigLoaderBase
+
+
+def deep_update(first: dict, second: dict) -> dict:
+    """Deep update first dictionary with data from the second."""
+    first = first.copy()
+    for k, v in second.items():
+        if k in first and isinstance(first[k], dict) and isinstance(v, dict):
+            first[k] = deep_update(first[k], v)
+        else:
+            first[k] = v
+
+    return first
 
 
 class MultiConfigLoader(ConfigLoaderBase):
