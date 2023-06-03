@@ -2,7 +2,7 @@
 site_name: Goodway Configs
 site_description: configs in a good way.
 site_author: Mahdi Sadeghi <mahdi74sadeghi@gmail.com>
-site_dir: site
+site_dir: docs_dist
 docs_dir: docs
 
 repo_name: mahs4d/goodway-configs
