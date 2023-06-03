@@ -1,9 +1,8 @@
-import json
 from pathlib import Path
 
 import yaml
 
-from goodway_configs.base import ConfigLoaderBase, ConfigsError
+from goodway_configs.config_loader.base import ConfigLoaderBase, ConfigsError
 
 
 class YamlConfigLoader(ConfigLoaderBase):

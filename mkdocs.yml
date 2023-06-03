@@ -1,0 +1,56 @@
+# yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
+site_name: Goodway Configs
+site_description: configs in a good way.
+site_author: Mahdi Sadeghi <mahdi74sadeghi@gmail.com>
+site_dir: site
+docs_dir: docs
+
+repo_name: mahs4d/goodway-configs
+repo_url: https://github.com/mahs4d/goodway-configs
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: green
+      accent: indigo
+      toggle:
+        icon: material/lightbulb
+        name: Switch to dark mode
+    - scheme: slate
+      primary: green
+      accent: indigo
+      toggle:
+        icon: material/lightbulb-outline
+        name: Switch to light mode
+  icon:
+    repo: fontawesome/brands/github-alt
+  language: en
+
+nav:
+  - Goodway Config: index.md
+  - Config Loaders:
+      - config_loader/base.md
+      - config_loader/json_loader.md
+      - config_loader/yaml_loader.md
+      - config_loader/multi_loader.md
+      - config_loader/etcd_loader.md
+
+markdown_extensions:
+  - admonition
+  - codehilite
+  - extra
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+
+extra:
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/mahs4d/goodway-configs
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/mahs4d

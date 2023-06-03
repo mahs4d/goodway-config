@@ -1,8 +1,8 @@
 import pytest
 from httpx import Response
 
-from goodway_configs.base import ConfigsError
-from goodway_configs.etcd_loader import EtcdConfigLoader
+from goodway_configs.config_loader.base import ConfigsError
+from goodway_configs.config_loader.etcd_loader import EtcdConfigLoader
 
 HTTPS_BASE_URL = 'https://localhost:1234'
 HTTP_BASE_URL = 'http://localhost:1234'

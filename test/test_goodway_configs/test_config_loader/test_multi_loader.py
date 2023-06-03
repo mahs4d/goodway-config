@@ -1,5 +1,5 @@
-from goodway_configs.base import ConfigLoaderBase
-from goodway_configs.multi_loader import MultiConfigLoader
+from goodway_configs.config_loader.base import ConfigLoaderBase
+from goodway_configs.config_loader.multi_loader import MultiConfigLoader
 
 
 class DummyConfigLoader(ConfigLoaderBase):

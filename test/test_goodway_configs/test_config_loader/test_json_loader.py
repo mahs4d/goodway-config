@@ -2,12 +2,12 @@ from pathlib import Path
 
 import pytest
 
-from goodway_configs.base import ConfigsError
-from goodway_configs.json_loader import JsonConfigLoader
+from goodway_configs.config_loader.base import ConfigsError
+from goodway_configs.config_loader.json_loader import JsonConfigLoader
 
 
 async def test_load_config_json():
-    loader = JsonConfigLoader(file_path=Path(__file__).parent / Path('./data/config.json'))
+    loader = JsonConfigLoader(file_path=Path(__file__).parent / Path('data/config.json'))
 
     config = await loader.load_config()
 

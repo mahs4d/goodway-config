@@ -1,7 +1,7 @@
 import json
 from pathlib import Path
 
-from goodway_configs.base import ConfigLoaderBase, ConfigsError
+from goodway_configs.config_loader.base import ConfigLoaderBase, ConfigsError
 
 
 class JsonConfigLoader(ConfigLoaderBase):

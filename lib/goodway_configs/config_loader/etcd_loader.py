@@ -3,7 +3,7 @@ import json
 
 import httpx
 
-from goodway_configs.base import ConfigLoaderBase, ConfigsError
+from goodway_configs.config_loader.base import ConfigLoaderBase, ConfigsError
 
 
 class EtcdConfigLoader(ConfigLoaderBase):

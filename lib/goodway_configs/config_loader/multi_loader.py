@@ -1,4 +1,4 @@
-from goodway_configs.base import ConfigLoaderBase
+from goodway_configs.config_loader.base import ConfigLoaderBase
 
 
 def deep_update(first: dict, second: dict) -> dict:

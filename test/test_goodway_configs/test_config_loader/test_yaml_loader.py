@@ -2,12 +2,12 @@ from pathlib import Path
 
 import pytest
 
-from goodway_configs.base import ConfigsError
-from goodway_configs.yaml_loader import YamlConfigLoader
+from goodway_configs.config_loader.base import ConfigsError
+from goodway_configs.config_loader.yaml_loader import YamlConfigLoader
 
 
 async def test_load_config():
-    loader = YamlConfigLoader(file_path=Path(__file__).parent / Path('./data/config.yaml'))
+    loader = YamlConfigLoader(file_path=Path(__file__).parent / Path('data/config.yaml'))
 
     config = await loader.load_config()
 
